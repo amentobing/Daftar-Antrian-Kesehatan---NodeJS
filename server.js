@@ -5,7 +5,7 @@ const appBrand = "Aplikasi Manajemen Kesehatan";
 const basicCollection = {
   appBrand,
   appName: `${appBrand} - by Amen Togu [50423150]`,
-  appDesc: `${appBrand} adalah sebuah NodeJS Web Application yang diperuntukkan untuk Project Informatika Kesehatan. Aplikasi ini berguna untuk membuat daftar antrian, pendaftaran, pembuatan resep obat, dan lainnya untuk fasilitas kesehatan seperti Puskesmas, Rumah Sakit, dan fasilitas kesehatan lainnya.`,
+  appDesc: `${appBrand} ini adalah sebuah NodeJS Web Application yang diperuntukkan untuk Project Informatika Kesehatan. Aplikasi ini berguna untuk membuat daftar antrian, pendaftaran, pembuatan resep obat, dan lainnya untuk fasilitas kesehatan seperti Puskesmas, Rumah Sakit, dan fasilitas kesehatan lainnya.`,
 };
 
 // Set View Engine
@@ -20,6 +20,6 @@ app.get("/", (req, res) => {
 app.use("", (req, res) => {
   res.sendStatus(404);
 });
-app.listen(5000, () => {
+app.listen(5000, "172.16.5.225", () => {
   console.log("Server UP!");
 });
