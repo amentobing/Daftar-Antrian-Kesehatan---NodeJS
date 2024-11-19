@@ -3,17 +3,17 @@
   <header class="border-bottom pt-4">
     <p class="h4 pt-4 text-center">Selamat Datang di <%= data.appBrand %></p>
   </header>
-  <section id="loginQuest" class="d-flex align-items-start justify-content-center pt-5" style="height: 75vh">
-    <div class="modal-dialog py-4 px-5 border rounded">
+  <section id="loginQuest" class="d-flex align-items-start justify-content-center pt-5">
+    <div class="py-4 px-5 border rounded">
       <p class="h5">Silahkan Login Disini</p>
       <div class="d-flex flex-column align-items-center row-gap-2">
         <div id="reglog" class="d-flex justify-content-center column-gap-1 w-100 pt-2">
-          <button class="btn btn-dark w-50">Masuk</button>
-          <button class="btn btn-outline-dark w-50">Daftar</button>
+          <button class="btn btn-dark w-50" data-bs-toggle="modal" data-bs-target="#login">Masuk</button>
+          <button class="btn btn-outline-dark w-50" onclick="window.location.href = '/daftar'">Daftar</button>
         </div>
-        <div id="guest" class="w-100">
+        <!-- <div id="guest" class="w-100">
           <button class="btn btn-dark w-100">Guest</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

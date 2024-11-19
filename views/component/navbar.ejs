@@ -1,6 +1,11 @@
-<nav class="navbar navbar-expand-sm px-5 py-2">
+<nav class="navbar navbar-expand-sm border-bottom px-5 py-2">
   <div class="container-fluid" id="nav-top">
-    <span class="navbar-brand mb-0 h1 text-info"><%= data.appBrand %></span>
+    <div class="navbar-brand">
+      <span class="navbar-brand mb-0 text-info"
+        ><span class="fw-bold" id="appName"><%= data.appBrand %> <br /></span>
+        <span class="text-decoration-underline h5 text-danger" id="brand"><%= data.faskesName %></span>
+      </span>
+    </div>
     <button
       class="navbar-toggler"
       type="button"
@@ -13,7 +18,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar-menu" style="flex-grow: 0">
-      <ul class="navbar-nav me-auto justify-content-end fs-5">
+      <ul class="navbar-nav me-auto justify-content-end fw-bold">
         <li class="nav-item">
           <button href="#" class="nav-link active">Beranda</button>
         </li>
@@ -25,7 +30,7 @@
   </div>
 </nav>
 
-<div class="container-fluid px-5 py-2 border-top border-bottom d-flex align-items-center" id="nav-mid">
+<div class="container-fluid px-5 py-2 border-bottom d-flex align-items-center" id="nav-mid">
   <div class="title fw-2 col-2 text-secondary" style="padding-left: 12px; width: 12%">Tentang Aplikasi</div>
   <div class="content col">
     <marquee behavior="" direction="left" scrollamount="5" class="align-middle"><%= data.appDesc %></marquee>
@@ -39,6 +44,9 @@
     .navbar {
       padding-left: 0 !important;
       padding-right: 0 !important;
+    }
+    #appName {
+      display: none;
     }
   }
 </style>
